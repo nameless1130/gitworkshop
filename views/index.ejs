@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Page</title>
+    <style>
+      body {
+        background: #b3e5fc;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 700px;
+        max-height: 90vh; 
+        background: #ffffffcc;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: auto;
+      }
+
+      h1 {
+        color: #0277bd;
+        margin-bottom: 15px;
+      }
+
+      p {
+        line-height: 1.6;
+        margin: 8px 0;
+      }
+
+      .photo {
+        margin-top: 20px;
+      }
+
+      .photo img {
+        max-height: 40vh; 
+        width: auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+      }
+
+      .photo img:hover {
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 15px;
+          margin: 10px;
+        }
+        .photo img {
+          max-height: 30vh;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Hello</h1>
+        <p>Instructions: Add an EJS file in the views folder under your name.</p>
+        <p>
+          For example, if your name is Bob, create a file named <strong>bob.ejs</strong> in the
+          <strong>views</strong> folder.
+        </p>
+        <p>
+          Go wild and design that page! You can treat it as a personal blog page.
+          You can use both HTML or EJS to design the page!
+        </p>
+      </div>
+      <div class="photo">
+        <img src="/sloth.gif" alt="Sloth GIF" />
+      </div>
+    </div>
+  </body>
+</html>
